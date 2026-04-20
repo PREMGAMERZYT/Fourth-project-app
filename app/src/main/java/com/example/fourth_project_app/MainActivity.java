@@ -15,7 +15,7 @@ import androidx.core.view.WindowInsetsCompat;
 public class MainActivity extends AppCompatActivity {
     private EditText editText;
     public static final String EXTRA_NAME = "com.example.fourth_project_app.extra.name";
-    public static final String Second_name = "\"com.example.fourth_project_app.second.name";
+    public static final String Second_name = "com.example.fourth_project_app.second.name";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
