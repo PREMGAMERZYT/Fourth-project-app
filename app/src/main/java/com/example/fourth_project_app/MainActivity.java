@@ -15,6 +15,7 @@ import androidx.core.view.WindowInsetsCompat;
 public class MainActivity extends AppCompatActivity {
     private EditText editText;
     public static final String EXTRA_NAME = "com.example.fourth_project_app.extra.name";
+    public static final String Second_name = "\"com.example.fourth_project_app.second.name";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,11 +23,15 @@ public class MainActivity extends AppCompatActivity {
         editText = findViewById(R.id.editTextText);
     }
     public void opensecondsctivity(View v) {
-        Toast.makeText(this, "Openning second activity", Toast.LENGTH_SHORT).show();
-        Intent intent = new Intent(this, message_reciver.class);
-
-        String nametext = editText.getText().toString();
-        intent.putExtra(EXTRA_NAME,nametext);
-        startActivity(intent);
+        String Name = editText.getText().toString();
+        if (Name.equals("Prem")) {
+            Intent intent = new Intent(this,MainActivity2.class);
+            intent.putExtra(Second_name,Name);
+            startActivity(intent);
+        } else if (Name.equals("prajwal")) {
+            Intent intent = new Intent(this, message_reciver.class);
+            intent.putExtra(EXTRA_NAME,Name);
+            startActivity(intent);
+        }
     }
 }

@@ -12,12 +12,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Fourthprojectapp">
         <activity
+            android:name=".MainActivity2"
+            android:label="Thired app"
+            android:parentActivityName=".MainActivity"
+
+            />
+        <activity
             android:name=".message_reciver"
             android:label="Second App"
-            android:parentActivityName=".MainActivity"
-            >
-
-        </activity>
+            android:parentActivityName=".MainActivity"></activity>
         <activity
             android:name=".MainActivity"
             android:exported="true">
