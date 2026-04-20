@@ -13,18 +13,20 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
-    EditText name;
+    private EditText editText;
     public static final String EXTRA_NAME = "com.example.fourth_project_app.extra.name";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        name.findViewById(R.id.editTextText);
-        String nametext = name.getText().toString();
+        editText = findViewById(R.id.editTextText);
     }
     public void opensecondsctivity(View v) {
         Toast.makeText(this, "Openning second activity", Toast.LENGTH_SHORT).show();
         Intent intent = new Intent(this, message_reciver.class);
+
+        String nametext = editText.getText().toString();
+        intent.putExtra(EXTRA_NAME,nametext);
         startActivity(intent);
     }
 }
