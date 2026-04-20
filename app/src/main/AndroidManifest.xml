@@ -13,10 +13,11 @@
         android:theme="@style/Theme.Fourthprojectapp">
         <activity
             android:name=".message_reciver"
-            android:exported="false"
-            android:label="Second Activity"
+            android:label="Second App"
             android:parentActivityName=".MainActivity"
-            />
+            >
+
+        </activity>
         <activity
             android:name=".MainActivity"
             android:exported="true">
