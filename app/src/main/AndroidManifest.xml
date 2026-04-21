@@ -24,7 +24,9 @@
         <activity
             android:name=".message_reciver"
             android:label="Second App"
-            android:parentActivityName=".MainActivity"></activity>
+            android:parentActivityName=".MainActivity">
+
+        </activity>
         <activity
             android:name=".MainActivity"
             android:exported="true">

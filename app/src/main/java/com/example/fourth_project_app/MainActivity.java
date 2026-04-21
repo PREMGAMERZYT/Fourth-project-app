@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
     private EditText editText;
     public static final String EXTRA_NAME = "com.example.fourth_project_app.extra.name";
     public static final String Second_name = "com.example.fourth_project_app.second.name";
+    public static final  String Thired_name = "com.example.fourth_project_app.thired.name";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,6 +32,10 @@ public class MainActivity extends AppCompatActivity {
         } else if (Name.equals("prajwal")) {
             Intent intent = new Intent(this, message_reciver.class);
             intent.putExtra(EXTRA_NAME,Name);
+            startActivity(intent);
+        } else if (Name.equals("Three")) {
+            Intent intent = new Intent(this,MainActivity3.class);
+            intent.putExtra(Thired_name,Name);
             startActivity(intent);
         }
     }
