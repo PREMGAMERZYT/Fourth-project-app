@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
     public static final String EXTRA_NAME = "com.example.fourth_project_app.extra.name";
     public static final String Second_name = "com.example.fourth_project_app.second.name";
     public static final  String Thired_name = "com.example.fourth_project_app.thired.name";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

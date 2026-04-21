@@ -12,11 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Fourthprojectapp">
         <activity
+            android:name=".MainActivity4"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity3"
             android:label="Thired Screen"
-            android:parentActivityName=".MainActivity"
-
-            />
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".MainActivity2"
             android:label="Thired app"
@@ -24,9 +25,7 @@
         <activity
             android:name=".message_reciver"
             android:label="Second App"
-            android:parentActivityName=".MainActivity">
-
-        </activity>
+            android:parentActivityName=".MainActivity"></activity>
         <activity
             android:name=".MainActivity"
             android:exported="true">

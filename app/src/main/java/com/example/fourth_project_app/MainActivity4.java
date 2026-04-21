@@ -1,8 +1,6 @@
 package com.example.fourth_project_app;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -10,17 +8,12 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class MainActivity3 extends AppCompatActivity {
+public class MainActivity4 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main3);
+        setContentView(R.layout.activity_main4);
 
-    }
-
-    public void Onclicking(View v) {
-        Intent intent = new Intent(this, MainActivity4.class);
-        startActivity(intent);
     }
 }
