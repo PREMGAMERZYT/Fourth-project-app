@@ -38,6 +38,8 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(this,MainActivity3.class);
             intent.putExtra(Thired_name,Name);
             startActivity(intent);
+        } else {
+
         }
 
     }
