@@ -29,7 +29,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="364dp"
         android:onClick="opensecondsctivity"
-        android:text="Send"
+        android:text="Next"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
