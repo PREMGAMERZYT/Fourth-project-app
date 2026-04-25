@@ -39,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
             intent.putExtra(Thired_name,Name);
             startActivity(intent);
         }
+
     }
     // learning Implicit intents
     //we can request any other app to perform any action
