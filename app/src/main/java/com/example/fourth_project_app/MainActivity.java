@@ -40,5 +40,5 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         }
     }
-    // learning implective intents in in new begingig
+    // learning Implicit intents
 }
