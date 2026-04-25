@@ -14,7 +14,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
-    private EditText editText;
+    private EditText url;
     private Button button;
     public static final String EXTRA_NAME = "com.example.fourth_project_app.extra.name";
     public static final String Second_name = "com.example.fourth_project_app.second.name";
@@ -24,12 +24,14 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        editText = findViewById(R.id.editTextText);
+        url = findViewById(R.id.editTextText);
         button = findViewById(R.id.button);
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                String UrlText = url.getText().toString();
+                Toast.makeText(MainActivity.this, UrlText, Toast.LENGTH_SHORT).show();
 
             }
         });
