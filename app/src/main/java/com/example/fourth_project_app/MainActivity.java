@@ -15,6 +15,8 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import java.nio.channels.InterruptedByTimeoutException;
+
 public class MainActivity extends AppCompatActivity {
     private EditText url;
     private Button button;
@@ -34,10 +36,14 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String UrlText = url.getText().toString();
                 Toast.makeText(MainActivity.this, UrlText, Toast.LENGTH_SHORT).show();
-                Uri webpage = Uri.parse(UrlText);
-                Intent intent = new Intent(Intent.ACTION_VIEW, webpage);
-                Intent chooser = Intent.createChooser(intent, "Open With");
-                startActivity(chooser);
+//                Uri webpage = Uri.parse(UrlText);
+//                Intent intent = new Intent(Intent.ACTION_VIEW, webpage);
+//
+//
+//                Intent chooser = Intent.createChooser(intent, "Open With");
+//                startActivity(chooser);
+
+                
             }
         });
     }
