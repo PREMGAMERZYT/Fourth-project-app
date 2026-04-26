@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(MainActivity.this, UrlText, Toast.LENGTH_SHORT).show();
                 Uri webpage = Uri.parse(UrlText);
                 Intent intent = new Intent(Intent.ACTION_VIEW, webpage);
-
+                
                 Intent chooser = Intent.createChooser(intent, "Open With");
                 startActivity(chooser);
 
