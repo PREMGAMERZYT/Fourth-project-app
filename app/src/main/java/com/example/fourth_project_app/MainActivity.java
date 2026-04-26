@@ -51,6 +51,7 @@ public class MainActivity extends AppCompatActivity {
                 Intent chosser = Intent.createChooser(intent, "Open With");
                 startActivity(chosser);
             }
+
         });
     }
 
