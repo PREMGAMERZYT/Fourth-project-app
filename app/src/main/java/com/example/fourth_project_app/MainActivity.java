@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
     private Button button;
     public static final String EXTRA_NAME = "com.example.fourth_project_app.extra.name";
     public static final String Second_name = "com.example.fourth_project_app.second.name";
-    public static final  String Thired_name = "com.example.fourth_project_app.thired.name";
+    public static final String Thired_name = "com.example.fourth_project_app.thired.name";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,7 +43,13 @@ public class MainActivity extends AppCompatActivity {
 //                Intent chooser = Intent.createChooser(intent, "Open With");
 //                startActivity(chooser);
 
-                
+                String [] address = {"prem@codewithprem.com", "prajwal@codewithprem.com"};
+                Intent intent = new Intent(Intent.ACTION_SEND);
+                intent.setType("*/*");
+                intent.putExtra(Intent.EXTRA_EMAIL, address);
+                intent.putExtra(Intent.EXTRA_SUBJECT, "harry subjects");
+                Intent chosser = Intent.createChooser(intent, "Open With");
+                startActivity(chosser);
             }
         });
     }
