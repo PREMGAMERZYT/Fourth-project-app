@@ -38,7 +38,6 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(Intent.ACTION_VIEW, webpage);
                 Intent chooser = Intent.createChooser(intent, "Open With");
                 startActivity(chooser);
-
             }
         });
     }
